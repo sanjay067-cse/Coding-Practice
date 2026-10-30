@@ -1,0 +1,29 @@
+https://leetcode.com/problems/a-number-after-a-double-reversal/
+
+
+class Solution(object):
+    def isSameAfterReversals(self, num):
+        """
+        :type num: int
+        :rtype: bool
+        """
+
+        x = num
+        rev1 = 0
+        rev2 = 0
+
+        if (num == 0) : return True
+        else :
+            while (num!= 0) :
+                d1 = num % 10
+                rev1 = (rev1*10) + d1
+                num = num/10
+
+            while (rev1!= 0) :
+                d2 = rev1 % 10
+                rev2 = (rev2*10) + d2
+                rev1 = rev1/10
+
+            if (rev2 == x) : return True
+            else : return False
+            
