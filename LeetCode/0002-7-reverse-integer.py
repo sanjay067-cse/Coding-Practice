@@ -1,4 +1,4 @@
-https://leetcode.com/problems/reverse-integer/
+# https://leetcode.com/problems/reverse-integer/
 
 class Solution(object):
     def reverse(self, x):
@@ -27,5 +27,3 @@ class Solution(object):
                 return -rev
             else: 
                 return 0
-
-    

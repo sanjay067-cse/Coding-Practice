@@ -1,5 +1,4 @@
-https://leetcode.com/problems/a-number-after-a-double-reversal/
-
+# https://leetcode.com/problems/a-number-after-a-double-reversal/
 
 class Solution(object):
     def isSameAfterReversals(self, num):
@@ -25,5 +24,4 @@ class Solution(object):
                 rev1 = rev1/10
 
             if (rev2 == x) : return True
-            else : return False
-            
+            else : return False          

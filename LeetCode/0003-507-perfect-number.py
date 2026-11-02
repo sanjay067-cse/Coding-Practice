@@ -1,5 +1,4 @@
-https://leetcode.com/problems/perfect-number/
-
+# https://leetcode.com/problems/perfect-number/
 
 class Solution(object):
     def checkPerfectNumber(self, num):
@@ -18,5 +17,4 @@ class Solution(object):
                     sum = sum + i  + pair
             
             if sum == num: return True
-            else: return False    
-            
+            else: return False        

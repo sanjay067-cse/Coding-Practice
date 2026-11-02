@@ -1,7 +1,7 @@
-https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/
+# https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/
 
 class Solution:
-    def minElement(self, nums: List[int]) -> int:
+    def minElement(self, nums: list[int]) -> int:
         new_list = []
 
         for i in nums:
