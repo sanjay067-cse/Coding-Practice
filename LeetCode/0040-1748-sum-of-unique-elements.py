@@ -2,10 +2,15 @@
 
 class Solution:
     def sumOfUnique(self, nums: list[int]) -> int:
+        hashmap = {}
+        for i in nums:
+            if i in hashmap.keys():
+                hashmap[i] += 1
+            else:
+                hashmap[i] = 1
+        
         total = 0
-        count = Counter(nums)
-        for num in count:
-            if count[num] == 1:
-                total += num
-
+        for k,v in hashmap.items():
+            if v == 1:
+                total += k
         return total
